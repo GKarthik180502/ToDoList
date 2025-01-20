@@ -1,5 +1,6 @@
 body{
     font-family: Arial;
+    background-color: antiquewhite;
 }
 .todo-grid,
 .todo-input-grid{
@@ -40,13 +41,12 @@ body{
 .to-do-list{
    font-size: large;
    font-weight: bold;
-   text-align: center;
    text-decoration: underline;
    padding-top: 10px;
    color: rgb(255, 123, 0);
 }
 .to-do-body{
-    width: 35%;
+
     background-color: antiquewhite;
     align-items: center;
     border-radius: 10px;
@@ -55,77 +55,3 @@ body{
     padding-bottom: 15px;
 }
 
-@media (max-width: 1024px) { 
-    .todo-grid, .todo-input-grid { 
-        grid-template-columns: 1fr 1fr; 
-        column-gap: 10px; margin-left: 10px; 
-    } 
-    .to-do-body { 
-        width: 75%; 
-        margin: 0 auto; 
-        padding: 10px; 
-    } 
-    .add-todo-button, 
-    .delete-todo-button { 
-        font-size: 14px; 
-        padding: 8px; 
-    } 
-    .to-do-list { 
-        font-size: medium; 
-    } 
-    .name-input, .due-date-input { 
-        font-size: 14px; 
-        padding: 5px; 
-    } 
-    } 
-    @media (max-width: 768px) { 
-        .todo-grid, .todo-input-grid { 
-            grid-template-columns: 1fr; 
-            column-gap: 0; row-gap: 10px; 
-            margin-left: 10px; 
-        } 
-        .to-do-body { 
-            width: 90%; 
-            margin: 0 auto; 
-            padding: 10px; 
-        } .add-todo-button, 
-        .delete-todo-button { 
-            font-size: 13px; 
-            padding: 8px; 
-        } 
-        .to-do-list { 
-            font-size: medium; 
-        } 
-        .name-input, 
-        .due-date-input { 
-            font-size: 13px; 
-            padding: 5px; 
-        } 
-    } 
-    @media (max-width: 480px) { 
-        .todo-grid, 
-        .todo-input-grid { 
-            grid-template-columns: 1fr; 
-            column-gap: 0; 
-            row-gap: 10px; 
-            margin-left: 5px; 
-        } 
-        .to-do-body { 
-            width: 100%; 
-            margin: 0 auto; 
-            padding: 10px; 
-        } 
-        .add-todo-button, 
-        .delete-todo-button { 
-            font-size: 12px; 
-            padding: 7px; 
-        } 
-        .to-do-list { 
-            font-size: small; 
-        } 
-        .name-input, 
-        .due-date-input { 
-            font-size: 12px; 
-            padding: 4px; 
-        } 
-    }
